@@ -8,65 +8,95 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
 
-        <!-- Removed the ImageButton back button -->
+        <!-- Month -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"
+            android:textSize="16sp" />
 
-        <TableLayout
+        <TextView
+            android:id="@+id/textViewMonth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:stretchColumns="1">
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="16dp"
+            android:maxLines="3"
+            android:ellipsize="end" />
 
-            <TableRow>
-                <TextView
-                    android:text="@string/month"
-                    android:textStyle="bold"
-                    android:padding="8dp" />
-                <TextView
-                    android:id="@+id/textViewMonth"
-                    android:padding="8dp" />
-            </TableRow>
+        <!-- Units Used -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/units_used"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"
+            android:textSize="16sp" />
 
-            <TableRow>
-                <TextView
-                    android:text="@string/units_used"
-                    android:textStyle="bold"
-                    android:padding="8dp" />
-                <TextView
-                    android:id="@+id/textViewUnits"
-                    android:padding="8dp" />
-            </TableRow>
+        <TextView
+            android:id="@+id/textViewUnits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="16dp" />
 
-            <TableRow>
-                <TextView
-                    android:text="@string/total_charge"
-                    android:textStyle="bold"
-                    android:padding="8dp" />
-                <TextView
-                    android:id="@+id/textViewTotal"
-                    android:padding="8dp" />
-            </TableRow>
+        <!-- Total Charge -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_charge"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"
+            android:textSize="16sp" />
 
-            <TableRow>
-                <TextView
-                    android:text="@string/rebate"
-                    android:textStyle="bold"
-                    android:padding="8dp" />
-                <TextView
-                    android:id="@+id/textViewRebate"
-                    android:padding="8dp" />
-            </TableRow>
+        <TextView
+            android:id="@+id/textViewTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="16dp" />
 
-            <TableRow>
-                <TextView
-                    android:text="@string/final_cost_after_rebate"
-                    android:textStyle="bold"
-                    android:padding="8dp" />
-                <TextView
-                    android:id="@+id/textViewFinal"
-                    android:padding="8dp" />
-            </TableRow>
+        <!-- Rebate -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rebate"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"
+            android:textSize="16sp" />
 
-        </TableLayout>
+        <TextView
+            android:id="@+id/textViewRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="16dp" />
+
+        <!-- Final Cost -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/final_cost_after_rebate"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="16dp" />
+
     </LinearLayout>
 </ScrollView>
