@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Electric Bill Estimator</string>
+    <string name="select_month">Select Month:</string>
+    <string name="enter_units_used">Enter Units Used (kWh):</string>
+    <string name="hint_units">e.g., 250</string>
+    <string name="select_rebate">Select Rebate:</string>
+
+    <!-- Rebate percentages -->
+    <string name="rebate_0">0%</string>
+    <string name="rebate_1">1%</string>
+    <string name="rebate_2">2%</string>
+    <string name="rebate_3">3%</string>
+    <string name="rebate_4">4%</string>
+    <string name="rebate_5">5%</string>
+
+    <string name="calculate">Calculate</string>
+
+    <!-- Label strings added -->
+    <string name="month">Month</string>
+    <string name="units_used">Units Used</string>
+    <string name="rebate">Rebate</string>
+    <string name="total_charge_label">Total Charge</string>
+    <string name="final_cost_after_rebate_label">Final Cost after Rebate</string>
+
+    <!-- You can keep or remove these if you want -->
+    <string name="total_charge">Total Charge: RM %.2f</string>
+    <string name="final_cost_after_rebate">Final Cost after Rebate: RM %.2f</string>
+
+    <string name="view_saved_bills">View Saved Bills</string>
+    <string name="about_this_app">About This App</string>
+
+    <!-- About page -->
+    <string name="profile_image_desc">Profile picture of Nurul Natasha Mohd Rizal</string>
+    <string name="name_label">Name:</string>
+    <string name="name_value">Nurul Natasha Mohd Rizal</string>
+    <string name="student_id_label">Student ID:</string>
+    <string name="student_id_value">2023516133</string>
+    <string name="course_label">Course:</string>
+    <string name="course_value">ICT602 - Mobile Technology and Development</string>
+    <string name="copyright_text">© 2025 Nurul Natasha Mohd Rizal</string>
+    <string name="visit_website">Visit Application Website</string>
+</resources>

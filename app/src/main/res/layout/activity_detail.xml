@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Removed the ImageButton back button -->
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView
+                    android:text="@string/month"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+                <TextView
+                    android:id="@+id/textViewMonth"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/units_used"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+                <TextView
+                    android:id="@+id/textViewUnits"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/total_charge"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+                <TextView
+                    android:id="@+id/textViewTotal"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/rebate"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+                <TextView
+                    android:id="@+id/textViewRebate"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/final_cost_after_rebate"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+                <TextView
+                    android:id="@+id/textViewFinal"
+                    android:padding="8dp" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

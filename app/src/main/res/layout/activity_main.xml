@@ -1,0 +1,169 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title (optional, if you want a visible title in layout too) -->
+        <TextView
+            android:id="@+id/textViewAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_month"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_units_used"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/editTextUnits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:inputType="number"
+            android:hint="@string/hint_units"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:autofillHints="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_rebate"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupRebate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rebate0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rebate_0"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/rebate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rebate_1"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/rebate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rebate_2"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/rebate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rebate_3"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/rebate4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rebate_4"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/rebate5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rebate_5"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textTotalCharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_charge"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/textFinalCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/final_cost_after_rebate"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/calculate"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@android:color/white"
+            android:drawableStart="@drawable/ic_calculate"
+            android:drawablePadding="8dp" />
+
+        <Button
+            android:id="@+id/buttonViewHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/view_saved_bills"
+            android:backgroundTint="@color/primaryDarkColor"
+            android:textColor="@android:color/white"
+            android:drawableStart="@drawable/ic_history"
+            android:drawablePadding="8dp" />
+
+    </LinearLayout>
+</ScrollView>
